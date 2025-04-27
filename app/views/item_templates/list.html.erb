@@ -1,0 +1,10 @@
+<h1> Test </h1>
+<div class="links-row">
+  <% @item_listing.each do |itm| %>
+    <div class="item">
+      <img src="<%= itm.thumbnail_url %>" class="thumbnail" alt="Image" />
+      <a href="<%= itm.link_url %>">
+        <%= itm.link_description %>
+      </a>
+    </div>
+<% end %>
